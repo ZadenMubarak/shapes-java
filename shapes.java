@@ -3,7 +3,8 @@ public class shapes{
     public static void main(String[] args){
         // Create a new shape object
 
-        pyramid(5);
+        // pyramid(5);
+        square(5);
     }
 
     public static void triangle(int height){
@@ -51,6 +52,19 @@ public class shapes{
 
             System.out.println(stars);
             spaces -= 1;
+        }
+    }
+
+    public static void square(int height){
+
+        
+
+        for (int i = 0; i < height; i++){
+            String square = "";
+            for (int x = 0; x < height; x++){
+                square += "*";
+            }
+            System.out.println(square);
         }
     }
 }
