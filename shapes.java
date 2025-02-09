@@ -1,4 +1,4 @@
-public class shapes{
+public class Shapes{
 
     public static void main(String[] args){
         // Create a new shape object
