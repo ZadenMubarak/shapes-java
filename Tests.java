@@ -3,6 +3,7 @@ import java.io.*;
 
 public class Tests {
 
+
     @Test
     public void testSquare() {
         // Capture console output
@@ -18,11 +19,12 @@ public class Tests {
         System.setOut(originalOut);
 
         // Expected output with newlines
-        String expectedOutput = "*****\n"
-                              + "*****\n"
-                              + "*****\n"
-                              + "*****\n"
-                              + "*****\n"; // Ensure newline at the end
+        String newline = System.lineSeparator();
+        String expectedOutput = "*****" + newline
+                                + "*****" + newline
+                                + "*****" + newline
+                                + "*****" + newline
+                                + "*****" + newline; // ensure newline at the end
 
         // Compare output
         Assert.assertEquals(expectedOutput, outContent.toString());
